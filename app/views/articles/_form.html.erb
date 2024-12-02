@@ -1,0 +1,15 @@
+<%= form_with(model: @article, local: true) do |form| %>
+  <p>
+    <%= form.label :title, 'Title:' %>
+    <%= form.text_field :title, placeholder: 'Article Title' %>
+  </p>
+
+  <p>
+    <%= form.label :body, 'Body:' %>
+    <%= form.text_area :body, placeholder: 'Write your article content here' %>
+  </p>
+
+  <p>
+    <%= form.submit 'Save Article' %>
+  </p>
+<% end %>
